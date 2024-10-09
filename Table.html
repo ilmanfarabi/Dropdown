@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            
+            border-collapse: collapse;
+        }
+        th ,td{
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+        nav > ul {
+            display: flex;
+        
+        }
+       nav li{
+        list-style: none;
+        margin-right: 10px;
+        padding: 5px;
+       }
+       nav li a{
+        text-decoration: none;
+        color: black;
+       }
+       nav li .dropdown{
+        display: none;
+        position: absolute;
+        background-color: lightyellow;
+        padding-left: 10px;
+       }
+       nav li:hover .dropdown{
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li>
+                <a href="Table.html">Table</a>
+            <ul class="dropdown">
+                <li><a href="Home.html">Home</a></li>
+                <li>
+                <a href="Table.html">Table</a>
+                </li>
+
+                <li><a href="Registration">Ragistration</a> </li>
+                </li>
+            </ul>
+                <li><a href="Registration">Ragistration</a> </li>
+    </ul>
+    </nav>
+
+    <table>
+        <caption ><h1>Table</h1></caption>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+    </table>
+</body>
+</html>
